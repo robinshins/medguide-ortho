@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#8FA8FF" stroke-opacity="0.09" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0F1523"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- drafting frame -->
+  <rect x="36" y="36" width="1128" height="558" fill="none" stroke="#8FA8FF" stroke-opacity="0.3" stroke-width="1"/>
+  <path d="M36 96h1128" stroke="#8FA8FF" stroke-opacity="0.14" stroke-width="1"/>
+
+  <!-- vertebra chevron stack + alignment tick -->
+  <g fill="none" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M600 116v34" stroke="#8FA8FF" stroke-width="10"/>
+    <path d="M528 216l72-38 72 38" stroke="#FF6B2C" stroke-width="13"/>
+    <path d="M528 264l72-38 72 38" stroke="#8FA8FF" stroke-width="13"/>
+    <path d="M528 312l72-38 72 38" stroke="#5F7CFA" stroke-width="13"/>
+    <path d="M528 360l72-38 72 38" stroke="#3A57EE" stroke-width="13"/>
+  </g>
+
+  <!-- Latin wordmark only: librsvg resolves <text> against system fonts, so Korean
+       here would silently break in CI. Helvetica/Arial exist everywhere. -->
+  <text x="600" y="466" text-anchor="middle" font-family="Helvetica,Arial,sans-serif"
+        font-size="42" font-weight="700" letter-spacing="14" fill="#DCE3F2">BONE &amp; JOINT</text>
+  <text x="600" y="506" text-anchor="middle" font-family="Helvetica,Arial,sans-serif"
+        font-size="16" font-weight="400" letter-spacing="6" fill="#8FA8FF">KOREA ORTHO CLINIC DATA</text>
+
+  <!-- title block flavor -->
+  <text x="72" y="76" font-family="Helvetica,Arial,sans-serif" font-size="14"
+        letter-spacing="4" fill="#8FA8FF" fill-opacity="0.75">AXIS</text>
+  <text x="1128" y="76" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="14"
+        letter-spacing="4" fill="#8FA8FF" fill-opacity="0.75">SHEET A-01</text>
+</svg>
