@@ -3,6 +3,7 @@
 // 좌측 고정(sticky) 인덱스 + 우측 정의 패널, 최신 글은 카드가 아니라 리더보드
 // 테이블, 마지막은 정사각 오렌지 버튼의 다크 CTA 밴드.
 import Link from 'next/link';
+import { getBaseUrl } from '@/lib/site-url';
 import { SITE } from '@/lib/site.config';
 import { getLatestArticles } from '@/lib/articles';
 import { generateAllKeywords } from '@/lib/keywords';
@@ -12,7 +13,7 @@ import { BodyMap, BODY_POINTS } from '@/app/components/decor/BodyMap';
 
 export const revalidate = 21600;
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || `https://${SITE.domain}`;
+const baseUrl = getBaseUrl();
 
 // 분석 대상 지역 수 — 키워드 생성기에서 실제 값을 계산한다.
 let REGION_COUNT = 470;
