@@ -3,6 +3,7 @@ import type { SiteConfig } from './site.types';
 // 정형외과 — "Axis". Blueprint + sports lab: hard edges, hairlines, tabular numerals.
 export const SITE: SiteConfig = {
   key: 'ortho',
+  gaId: 'G-151NKH5JQE',
 
   categoryKo: '정형외과',
   siteName: '본앤조인트',
